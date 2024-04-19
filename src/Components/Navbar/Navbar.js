@@ -4,6 +4,7 @@ import { FiSearch, FiChevronDown, FiX } from 'react-icons/fi';
  import CreateAccount from '../Pages/SignUp';
 import LoginPage from '../Pages/SignIn';
 import ava from "../../Images/ava4.png"
+import { FaCaretDown } from "react-icons/fa";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [isSignInClicked, setIsSignInClicked] = useState(false);
@@ -50,7 +51,7 @@ setLog(check)
 <div className='rounded-full w-7 h-7'>
   <img src={ava} alt='auto'   />
 </div>
-<div className='flex items-center justify-center'><h1 className='text-sm px-2 text-center'>Siddhart Goyal</h1> </div>
+<div className='flex items-center justify-center'><h1 className='text-sm px-2 text-center'>Siddhart Goyal</h1><FaCaretDown className='text-gray-900' />  </div>
 
       </div>:<div className='pr-6 md:pr-16'>
         <h1 className='flex items-center text-sm font-medium'>

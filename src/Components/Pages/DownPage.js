@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import image3 from '../../Images/image3.png';
 import ava3 from '../../Images/ava3.png';
 import ava4 from '../../Images/ava4.png';
-
+import { FaShareNodes } from "react-icons/fa6";
 export default function DownBox() {
     // State for the dropdowns
     const [openDropdown, setOpenDropdown] = useState(false);
@@ -79,9 +79,7 @@ export default function DownBox() {
             <h3>1.4k views</h3>
         </div>
         </div>
-        <div className="bg-gray-200 rounded-full p-2">
-            <i className="bi bi-share-fill"></i>
-        </div>
+     
     </div>
 </div>
 
@@ -142,20 +140,18 @@ export default function DownBox() {
 
 </div>
 
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center justify-start space-x-4">
         <img className="h-10 w-10" src={ava4} alt="1" />
      
-        <div className=' flex flex-col    md:flex-row justify-between'>
-        <div className="flex gap-10">
+        <div className=' flex flex-col items-start gap-10   md:flex-row justify-between'>
+       
             <h1 className="text-md">Joseph Gray</h1>
-        </div>
-        <div className="flex items-center  space-x-2">
+     
+        <div className="relative right-0  items-end   ">
             <h3>1.4k views</h3>
         </div>
         </div>
-        <div className="bg-gray-200 rounded-full p-2">
-            <i className="bi bi-share-fill"></i>
-        </div>
+      
     </div>
 </div>
 

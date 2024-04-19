@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
  import LeftBox from '../Pages/LeftPage';
 import DownBox from '../Pages/DownPage';
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FaCaretDown } from "react-icons/fa";
+import { MdGroupAdd } from "react-icons/md";
+
 export default function MainBox() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [selectedFilter, setSelectedFilter] = useState('All');
@@ -91,14 +94,14 @@ setLog(check)
             <h2 className='text-base font-medium text-gray-700'>Job</h2>
           </div>
         </div>
-        <div className='md:flex hidden  space-x-4 mt-4 md:mt-0'>
-          <button className='text-sm font-medium text-gray-700'>Write a Post <i className="bi bi-caret-down-fill ml-2"></i></button>
+        <div className='md:flex hidden  space-x-1 mt-4 md:mt-0'>
+          <button className='text-sm whitespace-nowrap flex items-center justify-center font-medium text-gray-700'>Write a Post <FaCaretDown /></button>
       {  log?
-        <button className='flex items-center text-sm font-medium text-black border border-gray-400 bg-white px-4 py-1 rounded'>
+        <button className='flex items-center w-full text-sm font-medium text-black border border-gray-400 bg-white px-4 py-1 rounded'>
           Leave Group
           </button>
-      :  <button className='flex items-center text-sm font-medium text-white bg-blue-500 px-4 py-1 rounded'>
-           Join Group
+      :  <button className='flex whitespace-nowrap items-center text-base font-medium text-white bg-blue-500 px-4 py-1 rounded'>
+         <MdGroupAdd  className='text-white'/>  Join Group
           </button>}
         </div>
       </div>
